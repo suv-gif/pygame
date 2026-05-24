@@ -1,0 +1,22 @@
+#import pgzrun
+#import pgzrun.screen
+l1=["burger","hot dog","pop"]
+print(l1)
+print(len(l1))
+l2=[[1,2,3],[5,6,7]]
+print(l2)
+print(l2[0][1])
+print(l2[1][2])
+for i in range(0,len(l2)):
+    for j in range(0,len(l2[0])):
+        print(l2[i][j])
+l3=[]
+n=int(input("enter the dimensions of the list:"))
+for i in range(n):
+    temp=[]
+    for j in range(n):
+        x=int(input("enter your element"))
+        temp.append(x)
+l3.append(temp)
+for i in range(n):
+    print(l3[i][i])
